@@ -1,0 +1,13 @@
+{
+  "name": "purescript-react-hooks-counter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pulp browserify --to html/index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
