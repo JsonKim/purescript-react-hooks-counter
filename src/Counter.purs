@@ -53,11 +53,10 @@ mkApp :: CreateComponent {}
 mkApp = do
   counter <- mkCounter
 
-  component "App" \_ ->
-    pure $ R.div
-      { className: "App"
-      , children:
-          [ R.h1_ [R.text "React Hooks Example"]
-          , element counter { initialCount: 1 }
-          ]
+  component "App" $ const <<< pure $ R.div
+    { className: "App"
+    , children:
+        [ R.h1_ [R.text "React Hooks Example"]
+        , element counter { initialCount: 1 }
+        ]
     }
